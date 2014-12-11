@@ -1,0 +1,134 @@
+.content-wrapper {
+    margin:0 auto;
+    max-width:1200px;
+}
+
+/*#region - Typography */
+h1 {
+	font-size:40px;
+	font-size:4rem;
+}
+
+h2 {
+    color:#999;
+	font-size:32px;
+	font-size:3.2rem;
+}
+
+h3 {
+	font-size:28px;
+	font-size:2.8rem;
+}
+
+h4 {
+	font-size:22px;
+	font-size:2.2rem;
+}
+
+p {
+	color:inherit;
+}
+
+h1, h2 {
+	font-family:'Strait', sans-serif;
+}
+
+h3, h4 {
+	font-family:'Antic Didone', serif;
+}
+
+p {
+	margin:0;
+}
+/*#endregion*/
+
+/*#region - Code Block*/
+pre {
+	background-color:#EEE;
+	border:solid 1px #999;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	display:block;
+	font-size:1.4rem;
+	padding:15px;
+	position:relative;
+	width:100%;
+	margin:10px 0 30px;
+}
+
+pre:after {
+	content:"";
+	bottom:0;
+	color:#fff;
+	display:none;
+	background-color:rgba(0,0,0,0.5);
+	height:auto;
+	padding:5px;
+	position:absolute;
+	right:0;
+	width:auto;
+}
+
+pre:hover:after {
+	display:block;
+}
+
+pre.css:after {
+	content:"CSS";
+}
+
+pre.html:after {
+	content:"HTML";
+}
+code {
+    white-space:pre-wrap;
+}
+/*#endregion*/
+
+/*#region - CTA's*/
+.primary, .secondary {
+	border:solid 1px transparent;
+	border-radius:3px;
+	display:block;
+	padding:10px 15px;
+	text-align:center;
+}
+
+.primary {
+	transition:all 0.3s linear;
+	-moz-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+}
+
+.primary:hover {
+	box-shadow:1px 1px 2px rgba(0,0,0,0.3);
+	transition:all 0.3s linear;
+	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.3);
+	-o-box-shadow:1px 1px 2px rgba(0,0,0,0.3);
+	-moz-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+}
+
+.primary:active {
+	border:solid 1px #DDD;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.3) inset;
+	transition:none;
+	-moz-box-shadow:1px 1px 5px rgba(0,0,0,0.3) inset;
+	-o-box-shadow:1px 1px 5px rgba(0,0,0,0.3) inset;
+	-moz-transition:none;
+	-o-transition:none;
+}
+
+.secondary {
+	background-color:#AAA;
+}
+/*#endregion*/
+
+/*#region - Scaffold */
+[class^="col-"] {
+	outline:solid 1px #999;
+    padding:10px;
+}
+
+/*#endregion*/
