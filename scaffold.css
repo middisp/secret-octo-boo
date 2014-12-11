@@ -1,0 +1,240 @@
+html {
+	font-size:62.5%;
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+body {
+	color:#333;
+	font-family:Arial, helevetica, sans-serif;
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+/*#region - Device Tags*/
+body:before {
+    content: 'phone';
+    display: none;
+    visibility:hidden;
+}
+@media (min-width: 769px) {
+    body:before {content:'tablet'}
+}
+@media (min-width: 992px) {
+    body:before {content:'desktop'}
+}
+@media (min-width: 1200px) {
+    body:before {content:'desktop-large'}
+}
+/*#endregion*/
+
+[class^=col-] {
+    float:left;
+}
+
+    [class^=col-] [class^=col-] {
+        padding:0;
+    }
+
+    [class^=col-] + [class^=col-] {
+        padding-left:10px;
+    }
+
+[class^=visible] {
+    visibility:visible;
+}
+
+.row {
+	width:100%;
+}
+
+    .row + .row {
+        margin-top:20px;
+    }
+
+.row:before, .row:after {
+	content:"";
+	clear:both;
+	display:block;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/*#region - Scaffold Extra Small*/
+.col-xs-12 {width:100%;}
+.col-xs-11 {width:91.6663%;}
+.col-xs-10 {width:83.3333%;}
+.col-xs-9  {width:75%;}
+.col-xs-8  {width:66.6664%;}
+.col-xs-7  {width:58.3331%;}
+.col-xs-6  {width:50%;}
+.col-xs-5  {width:41.6665%;}
+.col-xs-4  {width:33.3332%;}
+.col-xs-3  {width:25%;}
+.col-xs-2  {width:16.6666%;}
+.col-xs-1  {width:8.3333%;}
+/*#endregion*/
+
+/*#region - Offset Extra Small*/
+.col-xs-offset-12 {margin-left:100%;}
+.col-xs-offset-11 {margin-left:91.6663%;}
+.col-xs-offset-10 {margin-left:83.3333%;}
+.col-xs-offset-9  {margin-left:75%;}
+.col-xs-offset-8  {margin-left:66.6664%;}
+.col-xs-offset-7  {margin-left:58.3331%;}
+.col-xs-offset-6  {margin-left:50%;}
+.col-xs-offset-5  {margin-left:41.6665%;}
+.col-xs-offset-4  {margin-left:33.3332%;}
+.col-xs-offset-3  {margin-left:25%;}
+.col-xs-offset-2  {margin-left:16.6666%;}
+.col-xs-offset-1  {margin-left:8.3333%;}
+/*#endregion*/
+
+/*region - Visibility Extra Small*/
+.hidden-xs {
+    display:none;
+    visibility:hidden;
+}
+
+.visible-xs-block {display:block;}
+.visible-xs-inline {display: inline;}
+.visible-xs-inline-block {display:inline-block;}
+.visible-xs-flex {display:flexbox;}
+/*#endregion*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /*#region - Scaffold Small*/
+    .col-sm-12 {width:100%;}
+    .col-sm-11 {width:91.6663%;}
+    .col-sm-10 {width:83.3333%;}
+    .col-sm-9  {width:75%;}
+    .col-sm-8  {width:66.6664%;}
+    .col-sm-7  {width:58.3331%;}
+    .col-sm-6  {width:50%;}
+    .col-sm-5  {width:41.6665%;}
+    .col-sm-4  {width:33.3332%;}
+    .col-sm-3  {width:25%;}
+    .col-sm-2  {width:16.6666%;}
+    .col-sm-1  {width:8.3333%;}
+    /*#endregion*/
+
+    /*#region - Offset Small*/
+    .col-sm-offset-12 {margin-left:100%;}
+    .col-sm-offset-11 {margin-left:91.6663%;}
+    .col-sm-offset-10 {margin-left:83.3333%;}
+    .col-sm-offset-9  {margin-left:75%;}
+    .col-sm-offset-8  {margin-left:66.6664%;}
+    .col-sm-offset-7  {margin-left:58.3331%;}
+    .col-sm-offset-6  {margin-left:50%;}
+    .col-sm-offset-5  {margin-left:41.6665%;}
+    .col-sm-offset-4  {margin-left:33.3332%;}
+    .col-sm-offset-3  {margin-left:25%;}
+    .col-sm-offset-2  {margin-left:16.6666%;}
+    .col-sm-offset-1  {margin-left:8.3333%;}
+    /*#endregion*/
+
+    /*region - Visibility Small*/
+    .hidden-sm {
+        display:none;
+        visibility:hidden;
+    }
+
+    .visible-sm-block {display:block;}
+    .visible-sm-inline {display: inline;}
+    .visible-sm-inline-block {display:inline-block;}
+    .visible-sm-flex {display:flexbox;}
+    /*#endregion*/
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /*#region - Scaffold Medium*/
+    .col-md-12 {width:100%;}
+    .col-md-11 {width:91.6663%;}
+    .col-md-10 {width:83.3333%;}
+    .col-md-9  {width:75%;}
+    .col-md-8  {width:66.6664%;}
+    .col-md-7  {width:58.3331%;}
+    .col-md-6  {width:50%;}
+    .col-md-5  {width:41.6665%;}
+    .col-md-4  {width:33.3332%;}
+    .col-md-3  {width:25%;}
+    .col-md-2  {width:16.6666%;}
+    .col-dm-1  {width:8.3333%;}
+    /*#endregion*/
+
+    /*#region - Offset Medium*/
+    .col-md-offset-12 {margin-left:100%;}
+    .col-md-offset-11 {margin-left:91.6663%;}
+    .col-md-offset-10 {margin-left:83.3333%;}
+    .col-md-offset-9  {margin-left:75%;}
+    .col-md-offset-8  {margin-left:66.6664%;}
+    .col-md-offset-7  {margin-left:58.3331%;}
+    .col-md-offset-6  {margin-left:50%;}
+    .col-md-offset-5  {margin-left:41.6665%;}
+    .col-md-offset-4  {margin-left:33.3332%;}
+    .col-md-offset-3  {margin-left:25%;}
+    .col-md-offset-2  {margin-left:16.6666%;}
+    .col-md-offset-1  {margin-left:8.3333%;}
+    /*#endregion*/
+
+    /*region - Visibility Medium*/
+    .hidden-md {
+        display:none;
+        visibility:hidden;
+    }
+
+    .visible-md-block {display:block;}
+    .visible-md-inline {display: inline;}
+    .visible-md-inline-block {display:inline-block;}
+    .visible-md-flex {display:flexbox;}
+    /*#endregion*/
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /*#region - Scaffold Large*/
+    .col-lg-12 {width:100%;}
+    .col-lg-11 {width:91.6663%;}
+    .col-lg-10 {width:83.3333%;}
+    .col-lg-9  {width:75%;}
+    .col-lg-8  {width:66.6664%;}
+    .col-lg-7  {width:58.3331%;}
+    .col-lg-6  {width:50%;}
+    .col-lg-5  {width:41.6665%;}
+    .col-lg-4  {width:33.3332%;}
+    .col-lg-3  {width:25%;}
+    .col-lg-2  {width:16.6666%;}
+    .col-lg-1  {width:8.3333%;}
+    /*#endregion*/
+
+    /*#region - Offset Large*/
+    .col-lg-offset-12 {margin-left:100%;}
+    .col-lg-offset-11 {margin-left:91.6663%;}
+    .col-lg-offset-10 {margin-left:83.3333%;}
+    .col-lg-offset-9  {margin-left:75%;}
+    .col-lg-offset-8  {margin-left:66.6664%;}
+    .col-lg-offset-7  {margin-left:58.3331%;}
+    .col-lg-offset-6  {margin-left:50%;}
+    .col-lg-offset-5  {margin-left:41.6665%;}
+    .col-lg-offset-4  {margin-left:33.3332%;}
+    .col-lg-offset-3  {margin-left:25%;}
+    .col-lg-offset-2  {margin-left:16.6666%;}
+    .col-lg-offset-1  {margin-left:8.3333%;}
+    /*#endregion*/
+
+    /*region - Visibility Large*/
+    .hidden-lg {
+        display:none;
+        visibility:hidden;
+    }
+
+    .visible-lg-block {display:block;}
+    .visible-lg-inline {display: inline;}
+    .visible-lg-inline-block {display:inline-block;}
+    .visible-lg-flex {display:flexbox;}
+    /*#endregion*/
+}
