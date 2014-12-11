@@ -1,0 +1,33 @@
+/*#endregion*/
+button, .button, input[type=button], input[type=submit], input[type=reset] {
+    background-color:inherit;
+    border:solid 1px;
+    border-radius:5px;
+    color:inherit;
+    cursor:pointer;
+    display:block;
+    font-size:inherit;
+    text-align:center;
+    text-decoration:none;
+    padding:15px 30px;
+    width:100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    button, .button, input[type=button], input[type=submit], input[type=reset] {
+        display:inline-block;
+        width:auto;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    button, .button, input[type=button], input[type=submit], input[type=reset] {
+        padding:5px 15px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
