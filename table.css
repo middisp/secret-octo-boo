@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    table-layout:fixed;
+    width:100%;
+}
+
+    thead, tbody, tbody tr {
+        float:left;
+    }
+
+        thead th {
+            background:#d0d0d0;
+        }
+
+th, td {
+    display:block;
+    padding:5px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    thead, tbody, tbody tr {
+        float:none;
+    }
+
+    th, td {
+        display:table-cell;
+    }
+}
