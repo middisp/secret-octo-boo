@@ -1,6 +1,6 @@
 function jsDetect() {
     var b = document.body;
-    b.setAttribute('class', 'js');
+    b.classList.add('js');
 }
 
 // JavaScript source code
@@ -158,12 +158,11 @@ pm.prototype.alert = function () {
             body = document.body;
 
         if (container.setAttribute) {
-            container.setAttribute('class', klass);
             btn.setAttribute('id', btnID);
         } else {
-            container.class = klass;
             btn.id = btnID;
         }
+        container.classList.add(klass);
         container.innerHTML = Array.prototype.join.call(args, ' ');
         btn.innerHTML = btnText;
         container.appendChild(btn);
