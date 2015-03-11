@@ -1,5 +1,5 @@
 html {
-	font-size:62.5%;
+	font-size:10px;
     box-sizing:border-box;
 }
 
@@ -10,7 +10,6 @@ html {
 body {
 	color:#333;
 	font-family:Arial, helevetica, sans-serif;
-	font-size:14px;
 	font-size:1.4rem;
 }
 
@@ -36,7 +35,7 @@ body:before {
 }
 
     [class^=col-] [class^=col-] {
-        padding:0;
+        padding-left:0;
     }
 
     [class^=col-] + [class^=col-] {
@@ -60,6 +59,10 @@ body:before {
 	clear:both;
 	display:block;
 }
+
+/*#region Utility Classes */
+
+/*#endregion */
 
 /* Extra small devices (phones, less than 768px) */
 /*#region - Scaffold Extra Small*/
@@ -101,7 +104,13 @@ body:before {
 .visible-xs-block {display:block;}
 .visible-xs-inline {display: inline;}
 .visible-xs-inline-block {display:inline-block;}
-.visible-xs-flex {display:flexbox;}
+.visible-xs-flex {
+	display: -webkit-box;
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
 /*#endregion*/
 
 /* Small devices (tablets, 768px and up) */
@@ -145,7 +154,13 @@ body:before {
     .visible-sm-block {display:block;}
     .visible-sm-inline {display: inline;}
     .visible-sm-inline-block {display:inline-block;}
-    .visible-sm-flex {display:flexbox;}
+    .visible-sm-flex {
+		display: -webkit-box;
+		display: -moz-box; 
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
     /*#endregion*/
 }
 
@@ -190,7 +205,13 @@ body:before {
     .visible-md-block {display:block;}
     .visible-md-inline {display: inline;}
     .visible-md-inline-block {display:inline-block;}
-    .visible-md-flex {display:flexbox;}
+    .visible-md-flex {
+		display: -webkit-box;
+		display: -moz-box; 
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
     /*#endregion*/
 }
 
@@ -235,6 +256,12 @@ body:before {
     .visible-lg-block {display:block;}
     .visible-lg-inline {display: inline;}
     .visible-lg-inline-block {display:inline-block;}
-    .visible-lg-flex {display:flexbox;}
+    .visible-lg-flex {
+		display: -webkit-box;
+		display: -moz-box; 
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
     /*#endregion*/
 }
