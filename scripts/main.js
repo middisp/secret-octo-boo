@@ -6,7 +6,7 @@ function jsDetect() {
 // JavaScript source code
 var pm = pm || {};
 
-pm.prototype.log = function () {
+pm.log = function () {
     if (debug) {
         var output = document.createElement('pre'),
             css = '#log{background:#fff;' +
@@ -88,7 +88,7 @@ pm.prototype.log = function () {
     };
 }
 
-pm.prototype.alert = function () {
+pm.alert = function () {
     // Settings
     var klass,
         customCSS,
@@ -182,7 +182,7 @@ pm.prototype.alert = function () {
         init: init,
         customAlert: customAlert
     };
-}
+};
 
 (function (w) {
     jsDetect();
