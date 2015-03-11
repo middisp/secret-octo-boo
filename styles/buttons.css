@@ -2,7 +2,6 @@
 button, .button, input[type=button], input[type=submit], input[type=reset] {
     background-color:inherit;
     border:solid 1px;
-    border-radius:5px;
     color:inherit;
     cursor:pointer;
     display:block;
