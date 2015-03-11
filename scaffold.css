@@ -64,17 +64,17 @@ body:before {
 /* Extra small devices (phones, less than 768px) */
 /*#region - Scaffold Extra Small*/
 .col-xs-12 {width:100%;}
-.col-xs-11 {width:91.6663%;}
-.col-xs-10 {width:83.3333%;}
+.col-xs-11 {width:91.663%;}
+.col-xs-10 {width:83.333%;}
 .col-xs-9  {width:75%;}
-.col-xs-8  {width:66.6664%;}
-.col-xs-7  {width:58.3331%;}
+.col-xs-8  {width:66.664%;}
+.col-xs-7  {width:58.331%;}
 .col-xs-6  {width:50%;}
-.col-xs-5  {width:41.6665%;}
-.col-xs-4  {width:33.3332%;}
+.col-xs-5  {width:41.665%;}
+.col-xs-4  {width:33.332%;}
 .col-xs-3  {width:25%;}
-.col-xs-2  {width:16.6666%;}
-.col-xs-1  {width:8.3333%;}
+.col-xs-2  {width:16.666%;}
+.col-xs-1  {width:8.333%;}
 /*#endregion*/
 
 /*#region - Offset Extra Small*/
