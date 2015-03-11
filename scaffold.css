@@ -70,6 +70,61 @@ body:before {
 	display:none;
 	visibility:hidden;
 }
+
+.text-right {
+  text-align:right;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.text-justify {
+  text-align:justify;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px!important;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.pos-relative {
+    position:relative;
+}
+
+.pos-absolute {
+    position:absolute;
+}
+
+.f-left {
+    float:left;
+}
+
+.f-right {
+    float:right;
+}
+
+.msg-info {
+    background:#66CCFF;
+}
+
+.msg-error {
+    background:#D23641;
+}
+
+.msg-success {
+    background:#9BD23B;
+}
+
+.msg-warn {
+
+}
 /*#endregion */
 
 /* Extra small devices (phones, less than 768px) */
