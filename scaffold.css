@@ -61,7 +61,15 @@ body:before {
 }
 
 /*#region Utility Classes */
+.show {
+	display:inherit;
+	visibility:visible;
+}
 
+.hide {
+	display:none;
+	visibility:hidden;
+}
 /*#endregion */
 
 /* Extra small devices (phones, less than 768px) */
