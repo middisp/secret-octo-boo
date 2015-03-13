@@ -1,5 +1,5 @@
 function jsDetect() {
-    var b = document.body;
+    var b = document.body || document.getElementsByTagName('body')[0];
     b.classList.add('js');
 }
 
