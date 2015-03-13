@@ -84,6 +84,12 @@ body:before {
   text-align:justify;
 }
 
+.truncate {
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
 .sr-only {
     position: absolute;
     width: 1px!important;
