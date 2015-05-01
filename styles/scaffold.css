@@ -13,41 +13,8 @@ body {
 	font-size:1.4rem;
 }
 
-/*#region - Device Tags*/
-body:before {
-    content: 'phone';
-    display: none;
-    visibility:hidden;
-}
-@media (min-width: 769px) {
-    body:before {content:'tablet'}
-}
-@media (min-width: 992px) {
-    body:before {content:'desktop'}
-}
-@media (min-width: 1200px) {
-    body:before {content:'desktop-large'}
-}
-/*#endregion*/
-
-[class^=col-] {
-    float:left;
-}
-
-    [class^=col-] [class^=col-] {
-        padding-left:0;
-        padding-right:0;
-    }
-
-    [class^=col-] + [class^=col-] {
-        padding-left:10px;
-    }
-
-[class^=visible] {
-    visibility:visible;
-}
-
 .row {
+    overflow:hidden;
 	width:100%;
 }
 
@@ -59,6 +26,23 @@ body:before {
 	content:"";
 	clear:both;
 	display:block;
+}
+
+[class^=col-] {
+    float:left;
+}
+
+[class^=col-] [class^=col-] {
+    padding-left:0;
+    padding-right:0;
+}
+
+[class^=col-] + [class^=col-] {
+    padding-left:10px;
+}
+
+[class^=visible] {
+    visibility:visible;
 }
 
 /*#region Utility Classes */
@@ -126,19 +110,19 @@ body:before {
 }
 
 .msg-info {
-    background:#66CCFF;
+    background-color:#6CF;
 }
 
 .msg-error {
-    background:#D23641;
+    background-color:#D23641;
 }
 
 .msg-success {
-    background:#9BD23B;
+    background-color:#9BD23B;
 }
 
 .msg-warn {
-
+    background-color:#FC0;
 }
 /*#endregion */
 
