@@ -175,6 +175,12 @@ body {
 }
 /*#endregion*/
 
+/*#region - Positional Floats Extra Small */
+.xs-f-left {float:left}
+.xs-f-right {float:right}
+.xs-f-none {float:none}
+/*#endregion */
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     /*#region - Scaffold Small*/
@@ -224,6 +230,12 @@ body {
 		display: flex;
 	}
     /*#endregion*/
+    
+    /*#region - Positional Floats Small */
+    .sm-f-left {float:left}
+    .sm-f-right {float:right}
+    .sm-f-none {float:none}
+    /*#endregion */
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -275,6 +287,12 @@ body {
 		display: flex;
 	}
     /*#endregion*/
+    
+    /*#region - Positional Floats Medium */
+    .md-f-left {float:left}
+    .md-f-right {float:right}
+    .md-f-none {float:none}
+    /*#endregion */
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -326,4 +344,10 @@ body {
 		display: flex;
 	}
     /*#endregion*/
+    
+    /*#region - Positional Floats Large */
+    .lg-f-left {float:left}
+    .lg-f-right {float:right}
+    .lg-f-none {float:none}
+    /*#endregion */
 }
