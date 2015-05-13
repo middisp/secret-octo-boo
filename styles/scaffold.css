@@ -124,6 +124,21 @@ body {
 .msg-warn {
     background-color:#FC0;
 }
+
+.ninja,
+.invisible {
+    visibility: hidden!important;
+}
+
+.blankslate {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    width:100%;
+}
 /*#endregion */
 
 /* Extra small devices (phones, less than 768px) */
