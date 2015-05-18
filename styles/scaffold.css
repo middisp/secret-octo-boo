@@ -118,6 +118,11 @@ body {
     text-align: center;
     width:100%;
 }
+
+.centered {
+    margin-left:auto;
+    margin-right:auto;
+}
 /*#endregion */
 
 /* Extra small devices (phones, less than 768px) */
