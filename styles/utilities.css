@@ -1,0 +1,79 @@
+/*#region Utility Classes */
+.show {
+	display:inherit;
+	visibility:visible;
+}
+
+.hide {
+	display:none;
+	visibility:hidden;
+}
+
+.text-right {
+  text-align:right;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.text-justify {
+  text-align:justify;
+}
+
+.truncate {
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px!important;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.pos-relative {
+    position:relative;
+}
+
+.pos-absolute {
+    position:absolute;
+}
+
+.eq-height {
+	display: -webkit-box;
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.f-left {float:left}
+.f-right {float:right}
+.msg-info {background-color:#6CF}
+.msg-error {background-color:#D23641}
+.msg-success {background-color:#9BD23B}
+.msg-warn {background-color:#FC0}
+.ninja {visibility: hidden!important}
+
+.blankslate {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    width:100%;
+}
+
+.centered {
+    margin-left:auto;
+    margin-right:auto;
+}
+/*#endregion */
