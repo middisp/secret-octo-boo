@@ -4,6 +4,7 @@ function jsDetect() {
 }
 
 // JavaScript source code
+
 var pm = pm || {};
 
 pm.log = function () {
