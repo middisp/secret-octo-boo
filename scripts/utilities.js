@@ -5,6 +5,12 @@
     return nodeList && Array.prototype.slice.call(nodeList);
   }
   
+  function assignProps (obj, stuff) {
+    if (obj && stuff) Object.keys(stuff).forEach(function (key) {
+      obj[key] = stuff[key];
+    });
+  }
+  
   var $ = window.$ = function (elem, parent) {
     return (parent || document).querySelector(elem);
   };
@@ -73,6 +79,44 @@
     } else {
       throw new Error('Unknown position specified. Expected "top", "bottom", "before", "after" or "replace".');
     }
+  };
+  
+  $.make = function(elem, opts){
+    
+    if(elem === '#text'){
+      return document.createTextNode(opts)
+    }
+    
+    var el = document.createElement(elem);
+    if(!opts){
+      return el;
+    }
+    
+    if(opts.id){
+      el.setAttribute('id', opts.id);
+    }
+    
+    if(opts.dataset){
+      assignProps(el.dataset, opts.dataset);
+    }
+    
+    if(opts.innerHTML){
+      el.innerHTML = opts.innerHTML;
+    }
+    
+    if (opts.classList) {
+      opts.classList.forEach(function (cl) {
+        $.addClass(el, cl);
+      });
+    }
+    
+    return el;
+  };
+  
+  $.clone = function(elem, deep){
+    var prime = $(elem),
+        clone = prime.cloneNode(deep);
+    return clone;    
   };
     
   $.remove = function (node) {

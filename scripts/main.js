@@ -104,5 +104,5 @@ pm.alert = function () {
 };
 
 (function (w) {
-    jsDetect();
+    jsDetect();    
 })(window);
