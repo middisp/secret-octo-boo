@@ -98,13 +98,9 @@
     border: 0;
 }
 
-.pos-relative {
-    position:relative;
-}
-
-.pos-absolute {
-    position:absolute;
-}
+.pos-relative {position:relative}
+.pos-absolute {position:absolute}
+.pos-static {position:static}
 
 .eq-height {
 	display: -webkit-box;
@@ -117,8 +113,8 @@
 .f-left {float:left}
 .f-right {float:right}
 .msg-info {background-color:#6CF}
-.msg-error {background-color:#D23641}
-.msg-success {background-color:#9BD23B}
+.msg-error {background-color:#C00}
+.msg-success {background-color:#9D0}
 .msg-warn {background-color:#FC0}
 .ninja {visibility: hidden!important}
 
