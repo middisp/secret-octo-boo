@@ -28,20 +28,11 @@ body {
 	display:block;
 }
 
-[class^=col-] {
+[class*=col-] {
   float:left;
 }
 
-[class^=col-] [class^=col-] {
-  padding-left:0;
-  padding-right:0;
-}
-
-[class^=col-] + [class^=col-] {
-  padding-left:10px;
-}
-
-[class^=visible] {
+[class*=visible] {
   visibility:visible;
 }
 
