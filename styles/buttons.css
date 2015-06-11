@@ -1,32 +1,28 @@
-/*#endregion*/
-button, .button, input[type=button], input[type=submit], input[type=reset] {
+/*#region - Buttons */
+button, .btn, input[type=button], input[type=submit], input[type=reset] {
     background-color:inherit;
     border:solid 1px;
     color:inherit;
     cursor:pointer;
-    display:block;
+    display:inline-block;
     font-size:inherit;
     text-align:center;
     text-decoration:none;
-    padding:15px 30px;
+    padding:1.5rem 3rem;
     width:100%;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    button, .button, input[type=button], input[type=submit], input[type=reset] {
-        display:inline-block;
-        width:auto;
-    }
+.btn-block {
+  display: block;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    button, .button, input[type=button], input[type=submit], input[type=reset] {
-        padding:5px 15px;
-    }
+.btn-sm {
+  font-size:1rem;
+  padding:.5rem 1rem;
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+.btn-lg {
+  font-size:1.6rem;
+  padding:2rem 3.5rem;
 }
+/*#endregion */

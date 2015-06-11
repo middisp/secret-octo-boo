@@ -1,64 +1,4 @@
 /*#region Utility Classes */
-.p-5  {padding:.5rem}
-.p-10 {padding:1rem}
-.p-15 {padding:1.5rem}
-.p-20 {padding:2rem}
-.p-25 {padding:2.5rem}
-
-.p-t-5  {padding-top:.5rem}
-.p-t-10 {padding-top:1rem}
-.p-t-15 {padding-top:1.5rem}
-.p-t-20 {padding-top:2rem}
-.p-t-25 {padding-top:2.5rem}
-
-.p-l-5  {padding-left:.5rem}
-.p-l-10 {padding-left:1rem}
-.p-l-15 {padding-left:1.5rem}
-.p-l-20 {padding-left:2rem}
-.p-l-25 {padding-left:2.5rem}
-
-.p-b-5  {padding-bottom:.5rem}
-.p-b-10 {padding-bottom:1rem}
-.p-b-15 {padding-bottom:1.5rem}
-.p-b-20 {padding-bottom:2rem}
-.p-b-25 {padding-bottom:2.5rem}
-
-.p-r-5  {padding-right:.5rem}
-.p-r-10 {padding-right:1rem}
-.p-r-15 {padding-right:1.5rem}
-.p-r-20 {padding-right:2rem}
-.p-r-25 {padding-right:2.5rem}
-
-.m-5  {margin:.5rem}
-.m-10 {margin:1rem}
-.m-15 {margin:1.5rem}
-.m-20 {margin:2rem}
-.m-25 {margin:2.5rem}
-
-.m-t-5  {margin-top:.5rem}
-.m-t-10 {margin-top:1rem}
-.m-t-15 {margin-top:1.5rem}
-.m-t-20 {margin-top:2rem}
-.m-t-25 {margin-top:2.5rem}
-
-.m-l-5  {margin-left:.5rem}
-.m-l-10 {margin-left:1rem}
-.m-l-15 {margin-left:1.5rem}
-.m-l-20 {margin-left:2rem}
-.m-l-25 {margin-left:2.5rem}
-
-.m-b-5  {margin-bottom:.5rem}
-.m-b-10 {margin-bottom:1rem}
-.m-b-15 {margin-bottom:1.5rem}
-.m-b-20 {margin-bottom:2rem}
-.m-b-25 {margin-bottom:2.5rem}
-
-.m-r-5  {margin-right:.5rem}
-.m-r-10 {margin-right:1rem}
-.m-r-15 {margin-right:1.5rem}
-.m-r-20 {margin-right:1.5rem}
-.m-r-25 {margin-right:2.5rem}
-
 .show {
 	display:inherit;
 	visibility:visible;
@@ -112,10 +52,6 @@
 
 .f-left {float:left}
 .f-right {float:right}
-.msg-info {background-color:#6CF}
-.msg-error {background-color:#C00}
-.msg-success {background-color:#9D0}
-.msg-warn {background-color:#FC0}
 .ninja {visibility: hidden!important}
 
 .blankslate {
