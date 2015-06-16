@@ -3,8 +3,12 @@ function jsDetect() {
     b.classList.add('js');
 }
 
-// JavaScript source code
+var breakpoint = {};
+breakpoint.refreshValue = function () {
+  this.value = window.getComputedStyle(document.querySelector('body'), ':before').getPropertyValue('content').replace(/"/g, '');
+};
 
+// JavaScript source code
 (function (w) {
-    jsDetect();    
+    jsDetect();
 })(window);
