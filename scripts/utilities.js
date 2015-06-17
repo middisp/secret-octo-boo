@@ -30,16 +30,6 @@
   $.class = function (elem, parent){
     return $$.class(elem, parent)[0];
   };
-  
-  $.on = function(elem, evt, func) {
-    elem.addEventListener(evt, func);
-    return elem;
-  };
-
-  $.off = function(elem, evt, func) {
-    elem.removeEventListener(evt, func);
-    return elem;
-  };
 
   $.attr = function(elem, attribute, value) {
     if(value) {
@@ -128,6 +118,7 @@
     }
   };
   
+  /* Classes */
   $.toggleClass = function(elem, cls) {
     cls = cls.split(' ');
     if (elem.classList) {
@@ -185,5 +176,24 @@
   $.hasClass = function(elem, cls) {
     return elem.classList ? elem.classList.contains(cls) : new RegExp('\\b' + cls + '\\b').test(elem.cls);
   };
+  /* /Classes */
+  
+  /* Events */
+  Node.prototype.on = window.on = function(evt, func) {
+    this.addEventListener(evt, func);
+  };
+
+  Node.prototype.off = window.off = function(evt, func) {
+    this.removeEventListener(evt, func);
+  };
+  
+  NodeList.prototype.__proto__ = Array.prototype;
+  
+  NodeList.prototype.on = NodeList.prototype.addEventListener = function(evt, func) {
+    this.forEach(function (elem, i){
+      elem.on(evt, func);
+    });
+  };
+  /* /Events */
   
 })(window, document);
