@@ -18,18 +18,6 @@
   var $$ = window.$$ = function(elem, parent) {
     return slice((parent || document).querySelectorAll(elem));
   };
-  
-  $.id = function(id, parent) {
-    return (parent || document).getElementById(id);
-  };
-  
-  $$.class = function(elem, parent){
-    return slice((parent || document).getElementsByClassName(elem));
-  };
-  
-  $.class = function (elem, parent){
-    return $$.class(elem, parent)[0];
-  };
 
   $.attr = function(elem, attribute, value) {
     if(value) {
@@ -74,7 +62,7 @@
   $.make = function(elem, opts){
     
     if(elem === '#text'){
-      return document.createTextNode(opts)
+      return document.createTextNode(opts);
     }
     
     var el = document.createElement(elem);

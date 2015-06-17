@@ -1,10 +1,12 @@
 var debug = true;
 //var debug = false;
 
-var con = (function () {
+
+var con = (function (opts) {
     if (debug) {
-        var output = document.createElement('pre'),
-            css = '#log{background:rgba(255,255,255,0.5);position:fixed;top:200px;color:#bada55;right:0;padding:10px;height:300px;overflow:auto;z-index:1000;width:50%;line-height:100%;}#log span{color:#C00;}',
+        var opts = opts || {},
+        output = document.createElement('pre'),
+            css = '#log{background:'+ (opts.background || '#FFF') + ';position:fixed;top:200px;color:' + (opts.color || '#639') + ';right:0;padding:10px;height:300px;overflow:auto;z-index:1000;width:50%;line-height:20px;font-weight:bold}',
             head = document.head || document.getElementsByTagName('head')[0],
             style = document.createElement('style');
 
@@ -56,10 +58,6 @@ var con = (function () {
             elem.innerHTML += msg + '<br />';
         }
     };
-
-//    window.onerror = function (errorMsg, url, line) {
-//        log('<span>Error: ' + errorMsg + '</span>', '<span>File: ' + url + '</span>', '<span>Line: ' + line + '</span>');
-//    };
     console.info("Pete's mini logger enabled!");
 
     return {
@@ -67,7 +65,7 @@ var con = (function () {
     };
 }());
 
-//log('hello world');
+con.log('hello world');
 var obj = {
     id: 0,
     name: 'test',

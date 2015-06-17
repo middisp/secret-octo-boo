@@ -42,9 +42,6 @@ p {
 pre {
 	background-color:#EEE;
 	outline:solid 1px #999;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
 	display:block;
 	font-size:1.4rem;
 	padding:1.5rem;
@@ -57,17 +54,22 @@ pre:after {
 	content:"";
 	bottom:0;
 	color:#fff;
-	display:none;
 	background-color:rgba(0,0,0,0.5);
 	height:auto;
+	opacity:0;
 	padding:.5rem;
 	position:absolute;
 	right:0;
 	width:auto;
+	
+	transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	-moz-transition: all .5s linear;
 }
 
 pre:hover:after {
-	display:block;
+	opacity: 1;
 }
 
 pre.css:after {
