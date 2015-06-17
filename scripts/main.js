@@ -6,13 +6,13 @@ var breakpoint = {
 };
 
 function jsDetect() {
-    var b = document.body || $('body');
-    b.classList.add('js');
+  var b = document.body || $('body');
+  b.classList.add('js');
 }
 
 // JavaScript source code
 (function (w) {
-    jsDetect();
-    breakpoint.refreshValue();
-    console.log(breakpoint.value);
+  jsDetect();
+  breakpoint.refreshValue();
+  console.log(breakpoint.value);
 })(window);
