@@ -12,7 +12,7 @@
 var con = (function (module, opts) {
   opts = opts || {};
   var output = document.createElement('pre'),
-    css = '#log{background:' + (opts.background || '#FFF') + ';position:fixed;top:' + (opts.top || '200px') + ';color:' + (opts.color || '#639') + ';' + (opts.side || 'right') + ':0;padding:10px;height:300px;overflow:auto;z-index:1000;width:' + (opts.width || '50%') + ';line-height:20px;font-weight:bold}',
+    css = '#log{background:' + (opts.background || '#FFF') + ';position:fixed;top:' + (opts.top || '200px') + ';color:' + (opts.color || '#639') + ';' + (opts.side || 'right') + ':0;padding:10px;height:300px;overflow:auto;z-index:1000;width:' + (opts.width || '50%') + ';line-height:20px;font-weight:bold} span {color:#C00}',
     head = document.head || document.getElementsByTagName('head')[0],
     style = document.createElement('style');
 
@@ -59,7 +59,12 @@ var con = (function (module, opts) {
     }
     elem.innerHTML += msg + '<br />';
   };
-  console.info("Pete's mini logger enabled!");
+  
+  window.onerror = function(msg, url, line, column, errorObj) {
+    url = url.substr(url.lastIndexOf('/'));
+    module.log('<span>Error: ' + msg + '</span>', '<span>File: ' + url + '</span>', '<span>Line: ' + line + '</span>', '<span>Col: ' + (column || null) + '</span>', '<span>Stack: ' + (errorObj || null) + '</span>');
+    return false;
+  };
 
   return module;
 
@@ -72,3 +77,4 @@ var obj = {
   desc: 'test object'
 }, arr = [0, 1, 2, 3];
 con.log('test', obj, arr);
+con.log(dave);
