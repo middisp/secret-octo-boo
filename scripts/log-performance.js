@@ -19,7 +19,7 @@ var con = (function (module, opts) {
 				'#perf div:nth-child(even){background-color:' + (opts.rowColor || '#eee') + '}' +
 				'#perf span{width:100%;}' +
 				'#perf .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}' +
-				'#perf .dr{padding:5px;text-align:right}',
+				'#perf .dr{padding:0 0 5px;text-align:right}',
 			head = document.head || document.getElementsByTagName('head')[0],
 			style = document.createElement('style');
 
@@ -61,7 +61,7 @@ var con = (function (module, opts) {
 				domComplete = perfData.domComplete - perfData.navigationStart,
 				connectTime = perfData.responseEnd - perfData.requestStart;
 
-			// Sort the results on requestStart;
+			// Sort the results on startTime;
 			if (!perfInit) {
 				data = data.sort(function (a, b) {
 					return parseFloat(a.startTime) - parseFloat(b.startTime);
@@ -69,7 +69,7 @@ var con = (function (module, opts) {
 			}
 
 			console.info(connectTime + 'ms');
-			output += '<span class="dr">Requests: ' + data.length + ', Redirects: ' + performance.navigation.redirectCount + ', DOM Complete: ' + domComplete + 'ms</span>';
+			output += '<span class="dr">Reqs: ' + data.length + ', Redirects: ' + performance.navigation.redirectCount + ', DOM Ready: ' + domComplete + 'ms</span>';
 
 			for (var i = 0; i < data.length; i++) {
 				output += '<div data-id="' + i + '">';
