@@ -35,7 +35,7 @@ var con = (function (module, opts) {
 		output.setAttribute('id', 'perf');
 		output.setAttribute('data-action', 'micro');
 		document.body.appendChild(output);
-		elem = document.querySelector('#perf');
+		elem = document.getElementById('#perf');
 	}
 
 	function display (e) {
@@ -56,7 +56,6 @@ var con = (function (module, opts) {
 	
 	function detail (idx) {
 			var item = data[idx],
-				elem = document.querySelector('#perf'),
 				output = '<div>';
 
 			output += '<span class="n">' + item.name + '</span>';

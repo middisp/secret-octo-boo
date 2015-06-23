@@ -29,7 +29,7 @@ var con = (function (module, opts) {
   document.body.appendChild(output);
 
   module.log = function () {
-    var elem = document.querySelector('#log'),
+    var elem = document.getElementById('#log'),
       msg = '';
     for (var i = 0; i < arguments.length; i++) {
       if (typeof (arguments[i]) == 'object') {
@@ -62,7 +62,7 @@ var con = (function (module, opts) {
   
   window.onerror = function(msg, url, line, column, errorObj) {
     url = url.substr(url.lastIndexOf('/'));
-    module.log('<span>Error: ' + msg + '</span>', '<span>File: ' + url + '</span>', '<span>Line: ' + line + '</span>', '<span>Col: ' + (column || null) + '</span>', '<span>Stack: ' + (errorObj || null) + '</span>');
+    module.log('<span>Error: ' + msg + '</span>', '<span>File: ' + url + '</span>', '<span>Line: ' + line + '</span>', '<span>Col: ' + (column || 'N/A') + '</span>', '<span>Stack: ' + (errorObj || 'N/A') + '</span>');
     return false;
   };
 
