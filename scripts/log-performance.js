@@ -35,7 +35,8 @@ var con = (function (module, opts) {
 		output.setAttribute('id', 'perf');
 		output.setAttribute('data-action', 'micro');
 		document.body.appendChild(output);
-		elem = document.getElementById('#perf');
+		
+		elem = document.getElementById('perf');
 	}
 
 	function display (e) {
@@ -94,7 +95,6 @@ var con = (function (module, opts) {
 				output += '<span class="n">' + data[i].name.substr(data[i].name.lastIndexOf('/') + 1) + '</span>';
 				output += '</div>';
 			}
-
 			elem.innerHTML = output;
 			if (!perfInit) {
 				elem.addEventListener('click', display);
