@@ -23,7 +23,7 @@
     if (value) {
       elem.setAttribute(attribute, value);
     } else {
-      elem.getAttribute(attribute);
+      return elem.getAttribute(attribute);
     }
     return elem;
   };
@@ -183,5 +183,40 @@
     });
   };
   /* /Events */
+  
+  /* AJAX */
+  /*
+    obj = {
+      method: 'GET',
+      url: 'http://google.com',
+      data: {},
+      type: JSON,
+      callback: function(rsp) {}
+    }
+  */
+  $.ajax = function (obj) {
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == XMLHttpRequest.DONE) {
+        if (xhr.status == 200) {
+          if(obj.callback){
+            obj.callback(xhr.responseText);
+          } else {
+           return xhr.responseText; 
+          }          
+        } else if (xhr.status == 400) {
+          console.error('There was an error 400');
+        } else {
+          console.error('something else other than 200 was returned');
+        }
+      }
+    };
+
+    xhr.open((obj.method || 'POST'), obj.url , true);
+    xhr.responseType = obj.type || 'json';
+    xhr.send(obj.data || null);
+  };
+  /* /AJAX */
 
 })(window, document);

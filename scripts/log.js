@@ -29,7 +29,7 @@ var con = (function (module, opts) {
   document.body.appendChild(output);
 
   module.log = function () {
-    var elem = document.getElementById('#log'),
+    var elem = document.getElementById('log'),
       msg = '';
     for (var i = 0; i < arguments.length; i++) {
       if (typeof (arguments[i]) == 'object') {
@@ -70,6 +70,7 @@ var con = (function (module, opts) {
 
 } (con || {}));
 
+/*
 con.log('hello world');
 var obj = {
   id: 0,
@@ -78,3 +79,4 @@ var obj = {
 }, arr = [0, 1, 2, 3];
 con.log('test', obj, arr);
 con.log(dave);
+*/
