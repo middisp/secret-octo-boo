@@ -201,9 +201,9 @@
       if (xhr.readyState == XMLHttpRequest.DONE) {
         if (xhr.status == 200) {
           if(obj.callback){
-            obj.callback(xhr.responseText);
+            obj.callback(xhr.response);
           } else {
-           return xhr.responseText; 
+           return xhr.response; 
           }          
         } else if (xhr.status == 400) {
           console.error('There was an error 400');
@@ -214,7 +214,7 @@
     };
 
     xhr.open((obj.method || 'POST'), obj.url , true);
-    xhr.responseType = obj.type || 'json';
+    xhr.responseType = obj.type || 'JSON';
     xhr.send(obj.data || null);
   };
   /* /AJAX */
