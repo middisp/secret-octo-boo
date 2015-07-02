@@ -190,18 +190,18 @@
       method: 'GET',
       url: 'http://google.com',
       data: {},
-      type: JSON,
+      type: json,
       callback: function(rsp) {}
     }
   */
-  $.ajax = function (obj) {
-    var xhr = new XMLHttpRequest();
+  $.ajax = function (options) {
+    var opts = options || {} ,xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState == XMLHttpRequest.DONE) {
         if (xhr.status == 200) {
-          if(obj.callback){
-            obj.callback(xhr.response);
+          if(opts.callback){
+            opts.callback(xhr.response);
           } else {
            return xhr.response; 
           }          
@@ -213,9 +213,9 @@
       }
     };
 
-    xhr.open((obj.method || 'POST'), obj.url , true);
-    xhr.responseType = obj.type || 'JSON';
-    xhr.send(obj.data || null);
+    xhr.open((opts.method || 'POST'), opts.url , true);
+    xhr.responseType = opts.type || 'json';
+    xhr.send(opts.data || null);
   };
   /* /AJAX */
 
