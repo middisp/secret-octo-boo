@@ -1,4 +1,18 @@
-.info {background-color:#6CF}
-.error {background-color:#C00}
-.success {background-color:#9D0}
-.warning {background-color:#FC0}
+/* User Messages */
+.info {
+    background-color:#EEF9FE;
+    border-color:#BCE8F1;
+    color:#31708F;
+}
+
+.success {
+    background-color:#F5FCF2;
+    border-color:#D6E9C6;
+    color:#3C763D;
+}
+
+.error {
+    background-color:#F2DEDE;
+    border-color:#EBCCD1;
+    color:#A94442;
+}

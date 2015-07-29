@@ -28,13 +28,8 @@ body:before {
 	display:block;
 }
 
-[class*=col-] {
-  float:left;
-}
-
-[class*=visible] {
-  visibility:visible;
-}
+[class*=col-] {float:left}
+[class*=visible] {visibility:visible}
 
 /* Extra small devices (phones, less than 768px) */
 /*#region - Scaffold Extra Small*/

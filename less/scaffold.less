@@ -1,0 +1,7 @@
+.generate-columns(@n, @prefix, @i: 1) when (@i =< @n) {
+  .col-@{prefix}-@{i} {width: (@i * 100% / @n);}
+  .col-@{prefix}-offset-@{i} {margin-left: (@i * 100% / @n);}
+  .generate-columns(@n, @prefix, (@i + 1));
+}
+
+.generate-columns(12, 'xs');
