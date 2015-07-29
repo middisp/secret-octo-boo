@@ -9,11 +9,12 @@ button, .btn, input[type=button], input[type=submit], input[type=reset] {
     text-align:center;
     text-decoration:none;
     padding:1.5rem 3rem;
-    width:100%;
+    width:auto;
 }
 
 .btn-block {
   display: block;
+  width: 100%;
 }
 
 .btn-sm {

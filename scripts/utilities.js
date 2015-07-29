@@ -105,7 +105,7 @@
       node.parentNode.removeChild(node);
     }
   };
-  
+
   /* Classes */
   $.toggleClass = function (elem, cls) {
     cls = cls.split(' ');
@@ -164,8 +164,15 @@
   $.hasClass = function (elem, cls) {
     return elem.classList ? elem.classList.contains(cls) : new RegExp('\\b' + cls + '\\b').test(elem.cls);
   };
+
+  $.addClassFor = function ( element, className, duration ) {
+		$.addClass(element, className);
+		setTimeout(function(){
+			$.removeClass(element, className);
+		}, duration);
+	};
   /* /Classes */
-  
+
   /* Events */
   Node.prototype.on = window.on = function (evt, func) {
     this.addEventListener(evt, func);
@@ -173,6 +180,13 @@
 
   Node.prototype.off = window.off = function (evt, func) {
     this.removeEventListener(evt, func);
+  };
+
+  Node.prototype.once = window.once = function (evt, func) {
+    this.on(evt, function(e){
+      this.off(evt, func);
+      return func(e);
+    });
   };
 
   NodeList.prototype.__proto__ = Array.prototype;
@@ -183,15 +197,15 @@
     });
   };
   /* /Events */
-  
+
   /* AJAX */
   /*
     obj = {
       method: 'GET',
       url: 'http://google.com',
       data: {},
-      type: json,
-      callback: function(rsp) {}
+      type: 'json',
+      callback: function(rsp)
     }
   */
   $.ajax = function (options) {
@@ -203,8 +217,8 @@
           if(opts.callback){
             opts.callback(xhr.response);
           } else {
-           return xhr.response; 
-          }          
+           return xhr.response;
+          }
         } else if (xhr.status == 400) {
           console.error('There was an error 400');
         } else {
