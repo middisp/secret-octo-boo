@@ -13,22 +13,22 @@ thead th {
 }
 
 th, td {
-    display:block;
-    padding:5px;
+  display:block;
+  padding:5px;
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: @sm-breakpoint) {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: @md-breakpoint) {
 
-    thead, tbody, tbody tr {
-        float:none;
-    }
+  thead, tbody, tbody tr {
+    float:none;
+  }
 
-    th, td {
-        display:table-cell;
-    }
+  th, td {
+    display:table-cell;
+  }
 }

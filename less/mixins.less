@@ -1,0 +1,12 @@
+.generate-utilities(@prefix){
+  body:before {content:'@{prefix}';  display:none;}
+  .hidden-@{prefix} {display:none;visibility:hidden;}
+  .visible-@{prefix}-block {display:block;}
+  .visible-@{prefix}-inline {display: inline;}
+  .visible-@{prefix}-inline-block {display:inline-block;}
+  .visible-@{prefix}-flex {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;	display: flex;}
+
+  .@{prefix}-f-left {float:left}
+  .@{prefix}-f-right {float:right}
+  .@{prefix}-f-none {float:none}
+}

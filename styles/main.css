@@ -32,9 +32,9 @@ pre:after {
 	content:"";
 	bottom:0;
 	color:#fff;
+	display:none;
 	background-color:rgba(0,0,0,0.5);
 	height:auto;
-	opacity:0;
 	padding:.5rem;
 	position:absolute;
 	right:0;
@@ -46,7 +46,7 @@ pre:after {
 	-moz-transition: all .5s linear;
 }
 
-pre:hover:after {opacity: 1}
+pre:hover:after {display:block}
 pre.css:after {content:"CSS"}
 pre.html:after {content:"HTML"}
 code {white-space:pre-wrap}

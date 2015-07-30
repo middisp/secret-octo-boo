@@ -1,7 +1,50 @@
-.generate-columns(@n, @prefix, @i: 1) when (@i =< @n) {
-  .col-@{prefix}-@{i} {width: (@i * 100% / @n);}
-  .col-@{prefix}-offset-@{i} {margin-left: (@i * 100% / @n);}
-  .generate-columns(@n, @prefix, (@i + 1));
+html {
+	font-size: @font-size;
+  box-sizing:border-box;
 }
 
-.generate-columns(12, 'xs');
+*, *:before, *:after {
+  box-sizing:inherit;
+}
+
+body {
+	color:@font-color;
+	font-family:Arial, helevetica, sans-serif;
+	font-size:1.4rem;
+}
+
+.row {
+	width:100%;
+}
+
+.row:before, .row:after {
+	content:"";
+	clear:both;
+	display:block;
+}
+
+[class*=col-] {float:left}
+[class*=visible] {visibility:visible}
+
+/* Extra small devices (phones, less than 768px) */
+/*#region - Scaffold Extra Small*/
+.generate-columns(12, xs);
+.generate-utilities(xs);
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @sm-breakpoint) {
+  .generate-columns(12, sm);
+	.generate-utilities(sm);
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @md-breakpoint) {
+  .generate-columns(12, md);
+	.generate-utilities(md);
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @lg-breakpoint) {
+  .generate-columns(12, lg);
+	.generate-utilities(lg);
+}
