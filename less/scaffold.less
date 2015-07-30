@@ -21,23 +21,23 @@ html {
 [class*=visible] {visibility:visible}
 
 /* Extra small devices (phones, less than 768px) */
-.generate-columns(12, xs);
+.generate-columns(@cols, xs);
 .generate-utilities(xs);
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @sm-breakpoint) {
-  .generate-columns(12, sm);
+  .generate-columns(@cols, sm);
 	.generate-utilities(sm);
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @md-breakpoint) {
-  .generate-columns(12, md);
+  .generate-columns(@cols, md);
 	.generate-utilities(md);
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @lg-breakpoint) {
-  .generate-columns(12, lg);
+  .generate-columns(@cols, lg);
 	.generate-utilities(lg);
 }
