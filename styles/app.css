@@ -1,5 +1,6 @@
 /* Media Queries */
 /* Fonts */
+/* Colors */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -364,11 +365,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  color: #333333;
-  font-family: Arial, helevetica, sans-serif;
-  font-size: 1.4rem;
-}
 .row {
   width: 100%;
 }
@@ -385,7 +381,6 @@ body {
   visibility: visible;
 }
 /* Extra small devices (phones, less than 768px) */
-/*#region - Scaffold Extra Small*/
 .col-xs-1 {
   width: 8.33333333%;
 }
@@ -482,13 +477,13 @@ body:before {
   display: -webkit-flex;
   display: flex;
 }
-.xs-f-left {
+.xs-left {
   float: left;
 }
-.xs-f-right {
+.xs-right {
   float: right;
 }
-.xs-f-none {
+.xs-none {
   float: none;
 }
 /* Small devices (tablets, 768px and up) */
@@ -589,13 +584,13 @@ body:before {
     display: -webkit-flex;
     display: flex;
   }
-  .sm-f-left {
+  .sm-left {
     float: left;
   }
-  .sm-f-right {
+  .sm-right {
     float: right;
   }
-  .sm-f-none {
+  .sm-none {
     float: none;
   }
 }
@@ -697,13 +692,13 @@ body:before {
     display: -webkit-flex;
     display: flex;
   }
-  .md-f-left {
+  .md-left {
     float: left;
   }
-  .md-f-right {
+  .md-right {
     float: right;
   }
-  .md-f-none {
+  .md-none {
     float: none;
   }
 }
@@ -805,13 +800,13 @@ body:before {
     display: -webkit-flex;
     display: flex;
   }
-  .lg-f-left {
+  .lg-left {
     float: left;
   }
-  .lg-f-right {
+  .lg-right {
     float: right;
   }
-  .lg-f-none {
+  .lg-none {
     float: none;
   }
 }
@@ -823,20 +818,6 @@ body:before {
 .hide {
   display: none;
   visibility: hidden;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-}
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .sr-only {
   position: absolute;
@@ -864,10 +845,10 @@ body:before {
   display: -webkit-flex;
   display: flex;
 }
-.f-left {
+.left {
   float: left;
 }
-.f-right {
+.right {
   float: right;
 }
 .ninja {
@@ -887,6 +868,53 @@ body:before {
   margin-right: auto;
 }
 /*#endregion */
+body {
+  color: #333333;
+  font-family: Arial, helevetica, sans-serif;
+  font-size: 1.4rem;
+}
+h1,
+.h1 {
+  font-size: 2.25em;
+}
+h2,
+.h2 {
+  font-size: 1.75em;
+}
+h3,
+.h3 {
+  font-size: 1.5em;
+}
+h4,
+.h4 {
+  font-size: 1.25em;
+}
+h5,
+.h5 {
+  font-size: 1em;
+}
+h6,
+.h6 {
+  font-size: 1em;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lead {
+  font-size: 2rem;
+  font-weight: 600;
+}
 /*#region - Buttons */
 button,
 .btn,
@@ -917,6 +945,13 @@ input[type=reset] {
   padding: 2rem 3.5rem;
 }
 /*#endregion */
+a {
+  color: #4078c0;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: solid 1px;
+}
 table {
   border-collapse: collapse;
   table-layout: fixed;
@@ -1179,18 +1214,40 @@ td {
   margin-left: 2.5rem;
 }
 /* User Messages */
-.info {
-  background-color: #EEF9FE;
-  border-color: #BCE8F1;
-  color: #31708F;
+.user-msg {
+  border: solid 1px;
+  position: relative;
+  width: 100%;
 }
-.success {
-  background-color: #F5FCF2;
-  border-color: #D6E9C6;
-  color: #3C763D;
+.user-msg + .user-msg {
+  margin-top: 1rem;
 }
-.error {
-  background-color: #F2DEDE;
-  border-color: #EBCCD1;
-  color: #A94442;
+.user-msg.info {
+  background-color: #d0e5ef;
+  border-color: #5ea5c8;
+  color: #31708f;
+}
+.user-msg.success {
+  background-color: #cce5cc;
+  border-color: #4d984e;
+  color: #3c763d;
+}
+.user-msg.error {
+  background-color: #f9f1f1;
+  border-color: #c0605e;
+  color: #a94442;
+}
+.user-msg.warn {
+  background-color: #fff9ea;
+  border-color: #ffeab7;
+  color: #ffbf1e;
+}
+.user-msg .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.user-msg a,
+.user-msg span {
+  font-weight: 600;
 }

@@ -1,18 +1,44 @@
 /* User Messages */
-.info {
-    background-color:#EEF9FE;
-    border-color:#BCE8F1;
-    color:#31708F;
-}
+.user-msg {
+  border: solid 1px;
+  position: relative;
+  width: 100%;
 
-.success {
-    background-color:#F5FCF2;
-    border-color:#D6E9C6;
-    color:#3C763D;
-}
+  & + .user-msg {
+    margin-top: 1rem;
+  }
 
-.error {
-    background-color:#F2DEDE;
-    border-color:#EBCCD1;
-    color:#A94442;
+  &.info {
+    background-color:lighten(@info, 50%);
+    border-color:lighten(@info, 20%);
+    color:@info;
+  }
+
+  &.success {
+    background-color:lighten(@success, 50%);
+    border-color:lighten(@success, 10%);
+    color:@success;
+  }
+
+  &.error {
+    background-color:lighten(@error, 50%);
+    border-color:lighten(@error, 10%);
+    color:@error;
+  }
+
+  &.warn {
+    background-color: @warn;
+    border-color: darken(@warn, 10%);
+    color: darken(@warn, 40%);
+  }
+
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  a, span {
+    font-weight: @font-bold;
+  }
 }

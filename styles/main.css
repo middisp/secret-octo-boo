@@ -1,4 +1,4 @@
-.container {
+section {
     margin:0 auto;
     max-width:1200px;
 }
@@ -39,54 +39,11 @@ pre:after {
 	position:absolute;
 	right:0;
 	width:auto;
-
-	transition: all .5s linear;
-	-webkit-transition: all .5s linear;
-	-o-transition: all .5s linear;
-	-moz-transition: all .5s linear;
 }
 
 pre:hover:after {display:block}
 pre.css:after {content:"CSS"}
 pre.html:after {content:"HTML"}
-code {white-space:pre-wrap}
-/*#endregion*/
-
-/*#region - CTA's*/
-.primary, .secondary {
-	border:solid 1px transparent;
-	border-radius:3px;
-	display:block;
-	padding:1rem 1.5rem;
-	text-align:center;
-}
-
-.primary {
-	transition:all 0.3s linear;
-	-moz-transition:all 0.3s linear;
-	-o-transition:all 0.3s linear;
-}
-
-.primary:hover {
-	box-shadow:1px 1px 2px rgba(0,0,0,0.3);
-	transition:all 0.3s linear;
-	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.3);
-	-o-box-shadow:1px 1px 2px rgba(0,0,0,0.3);
-	-moz-transition:all 0.3s linear;
-	-o-transition:all 0.3s linear;
-}
-
-.primary:active {
-	border:solid 1px #DDD;
-	box-shadow:1px 1px 5px rgba(0,0,0,0.3) inset;
-	transition:none;
-	-moz-box-shadow:1px 1px 5px rgba(0,0,0,0.3) inset;
-	-o-box-shadow:1px 1px 5px rgba(0,0,0,0.3) inset;
-	-moz-transition:none;
-	-o-transition:none;
-}
-
-.secondary {background-color:#AAA}
 /*#endregion*/
 
 /*#region - Scaffold */
