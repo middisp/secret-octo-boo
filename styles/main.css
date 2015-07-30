@@ -3,6 +3,15 @@ section {
     max-width:1200px;
 }
 
+nav {background-color: #EEE}
+nav.tabs, nav.menu {background-color:transparent}
+nav a:hover {
+	background-color: rgba(0,0,0,.1);
+	text-decoration: none;
+}
+nav.menu a.active, nav.menu a.active:hover {border-left: solid 3px #999; padding-left:.7rem}
+nav.menu a:hover {border-left:solid 3px; padding-left:.7rem}
+
 /*#region - Typography */
 h1 {font-size:4rem}
 h2 {color:#999; font-size:3.2rem}

@@ -932,6 +932,13 @@ input[type=reset] {
   padding: 1.5rem 3rem;
   width: auto;
 }
+button:hover,
+.btn:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+  text-decoration: none;
+}
 .btn-block {
   display: block;
   width: 100%;
@@ -950,7 +957,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  border-bottom: solid 1px;
+  text-decoration: underline;
 }
 table {
   border-collapse: collapse;
@@ -1239,8 +1246,8 @@ td {
 }
 .user-msg.warn {
   background-color: #fff9ea;
-  border-color: #ffeab7;
-  color: #ffbf1e;
+  border-color: #ffdc84;
+  color: #eaa700;
 }
 .user-msg .close {
   position: absolute;
@@ -1250,4 +1257,26 @@ td {
 .user-msg a,
 .user-msg span {
   font-weight: 600;
+}
+nav {
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 1rem;
+}
+nav.menu a {
+  display: block;
+  width: 100%;
+}
+nav.tabs {
+  border-bottom: #999 1px solid;
+}
+nav.tabs a {
+  margin-bottom: -1px;
+  position: relative;
+}
+nav.tabs a.active {
+  border: solid 1px #999;
+  border-bottom-color: #fff;
 }

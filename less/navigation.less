@@ -1,0 +1,29 @@
+nav {
+	width: 100%;
+
+	a {
+		display: inline-block;
+		padding: 1rem;
+	}
+
+	&.menu {
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&.tabs {
+		border-bottom: #999 1px solid;
+
+		a {
+			margin-bottom: -1px;
+			position: relative;
+
+			&.active {
+				border: solid 1px #999;
+				border-bottom-color: #fff;
+			}
+		}
+	}
+}
