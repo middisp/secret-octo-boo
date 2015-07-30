@@ -1,6 +1,6 @@
 /* Media Queries */
 /* Fonts */
-/* Colors */
+/* Informative Colors */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -376,6 +376,7 @@ html {
 }
 [class*=col-] {
   float: left;
+  padding: 1rem;
 }
 [class*=visible] {
   visibility: visible;
@@ -929,7 +930,7 @@ input[type=reset] {
   font-size: inherit;
   text-align: center;
   text-decoration: none;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2.5rem;
   width: auto;
 }
 button:hover,
@@ -949,7 +950,7 @@ input[type=reset]:hover {
 }
 .btn-lg {
   font-size: 1.6rem;
-  padding: 2rem 3.5rem;
+  padding: 1.5rem 3rem;
 }
 /*#endregion */
 a {
@@ -1268,6 +1269,11 @@ nav a {
 nav.menu a {
   display: block;
   width: 100%;
+}
+nav.menu span {
+  display: block;
+  font-weight: 600;
+  padding: 1rem;
 }
 nav.tabs {
   border-bottom: #999 1px solid;
