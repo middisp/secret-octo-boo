@@ -6,8 +6,8 @@
   .generate-columns(@n, @prefix, (@i + 1));
 }
 
-.generate-box-model(@n, @i: 1) when (@i =< @n) {
-  @sum: (.5rem * @i);
+.generate-box-model(@n, @i: 0) when (@i =< @n) {
+  @sum: (@i * .5rem);
   .p-@{i} {padding: @sum}
   .p-e-@{i} {padding-top: @sum; padding-bottom: @sum;}
   .p-s-@{i} {padding-left: @sum; padding-right: @sum;}
