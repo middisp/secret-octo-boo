@@ -7,7 +7,7 @@ var breakpoint = {
 
 function jsDetect() {
   var b = document.body || $('body');
-  b.classList.add('js');
+  $.addClass(b, 'js');
 }
 
 // JavaScript source code
@@ -21,5 +21,5 @@ function jsDetect() {
 
     worker.postMessage({cmd: 'add', params: {x: 2, y: 3}});
   }
-  
+
 })(window);

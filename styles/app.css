@@ -923,7 +923,6 @@ button,
 input[type=button],
 input[type=submit],
 input[type=reset] {
-  background-color: inherit;
   border: solid 1px;
   color: inherit;
   cursor: pointer;
@@ -1298,9 +1297,13 @@ td {
   color: #eaa700;
 }
 .user-msg .close {
+  font-size: 2rem;
   position: absolute;
   right: 15px;
-  top: 15px;
+  top: 8px;
+}
+.user-msg .close:hover {
+  text-decoration: none;
 }
 .user-msg a,
 .user-msg span {
