@@ -20,24 +20,30 @@ html {
 [class*=col-] {float:left; padding: @default-padding;}
 [class*=visible] {visibility:visible}
 
-/* Extra small devices (phones, less than 768px) */
+/* Extra small devices (phones, less than 550px) */
 .generate-columns(@cols, xs);
 .generate-utilities(xs);
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (Phablets, 550px and up) */
 @media (min-width: @sm-breakpoint) {
   .generate-columns(@cols, sm);
 	.generate-utilities(sm);
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices (Tablets, 750px and up) */
 @media (min-width: @md-breakpoint) {
   .generate-columns(@cols, md);
 	.generate-utilities(md);
 }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (Desktops, 1000px and up) */
 @media (min-width: @lg-breakpoint) {
   .generate-columns(@cols, lg);
 	.generate-utilities(lg);
+}
+
+/* Large devices (HD Desktops, 1200px and up) */
+@media (min-width: @xl-breakpoint) {
+  .generate-columns(@cols, xl);
+	.generate-utilities(xl);
 }
