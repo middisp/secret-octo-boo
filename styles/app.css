@@ -24,6 +24,10 @@ html {
   float: left;
   padding: 1rem;
 }
+[class*=col-] > [class*=col-] {
+  padding-left: 0;
+  padding-right: 0;
+}
 [class*=visible] {
   visibility: visible;
 }
@@ -641,7 +645,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 h1,
 .h1 {
