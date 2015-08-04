@@ -2,13 +2,22 @@ var pm = pm || {};
 
 pm.alert = function () {
     // Settings
-    var klass, btnID, btnText, customJS,
+    var klass, btnID, btnText, customJS, parent,
     init = function (options) {
         var opts = options || {};
         klass = opts.klass || 'alert-box';
         btnID = opts.btnID || 'dismiss';
         btnText = opts.btnText || 'OK';
         customJS = opts.customJS || false;
+        if(opts.parent){
+          if(typeof opts.parent === 'string'){
+            parent = document.querySelector(opts.parent);
+          } else {
+            parent = opts.parent;
+          }
+        } else {
+          parent = document.querySelector('body');
+        }
     },
 
     dismiss = function () {
@@ -19,8 +28,7 @@ pm.alert = function () {
 
     customAlert = function (args) {
         var container = document.createElement('div'),
-            btn = document.createElement('a'),
-            body = document.body;
+            btn = document.createElement('a');
 
         if (container.setAttribute) {
             btn.setAttribute('id', btnID);
@@ -28,10 +36,10 @@ pm.alert = function () {
             btn.id = btnID;
         }
         container.classList.add(klass);
-        container.innerHTML = Array.prototype.join.call(args, ' ');
+        container.innerHTML = Array.prototype.join.call(args, '');
         btn.innerHTML = btnText;
         container.appendChild(btn);
-        body.appendChild(container);
+        parent.appendChild(container);
 
         if (!customJS) {
             btn.addEventListener('click', dismiss);

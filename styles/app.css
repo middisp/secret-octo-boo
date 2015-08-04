@@ -33,7 +33,7 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-[class*=visible] {
+[class*=visible-] {
   visibility: visible;
 }
 /* Extra small devices (phones, less than 550px) */
@@ -466,7 +466,7 @@ body:before {
     float: none;
   }
 }
-/* Large devices (HD Desktops, 1200px and up) */
+/* Extra Large devices (HD Desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .col-xl-1 {
     width: 8.33333333%;
@@ -601,6 +601,9 @@ body:before {
 }
 .pos-static {
   position: static;
+}
+.pos-fixed {
+  position: fixed;
 }
 .eq-height {
   display: -webkit-box;

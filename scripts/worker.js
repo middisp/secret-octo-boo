@@ -23,7 +23,8 @@ onerror = function(e) {
 /*
  * e.data = {
  *	cmd: '',
- *  msg: ''
+ *  msg: '',
+ *  params:{}
  * }
  */
 onmessage = function(e) {

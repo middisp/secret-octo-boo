@@ -137,6 +137,7 @@
         }
       }
     }
+    return elem;
   };
 
   $.addClass = function (elem, cls) {
@@ -148,6 +149,7 @@
         elem.className += ' ' + cls[i];
       }
     }
+    return elem;
   };
 
   $.removeClass = function (elem, cls) {
@@ -159,17 +161,19 @@
         elem.className = elem.className.replace(new RegExp('\\b' + cls[i] + '\\b', 'g'), '');
       }
     }
+    return elem;
   };
 
   $.hasClass = function (elem, cls) {
     return elem.classList ? elem.classList.contains(cls) : new RegExp('\\b' + cls + '\\b').test(elem.cls);
   };
 
-  $.addClassFor = function ( element, className, duration ) {
-		$.addClass(element, className);
+  $.addClassFor = function ( elem, className, duration ) {
+		$.addClass(elem, className);
 		setTimeout(function(){
-			$.removeClass(element, className);
+			$.removeClass(elem, className);
 		}, duration);
+    return elem;
 	};
   /* /Classes */
 

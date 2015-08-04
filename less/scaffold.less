@@ -44,7 +44,7 @@ body {
 
 [class*=col-] {float:left; padding: @default-padding;}
 [class*=col-] > [class*=col-] {padding-left:0; padding-right:0;}
-[class*=visible] {visibility:visible;}
+[class*=visible-] {visibility:visible;}
 
 /* Extra small devices (phones, less than 550px) */
 .generate-columns(@cols, xs);
@@ -68,7 +68,7 @@ body {
 	.generate-utilities(lg);
 }
 
-/* Large devices (HD Desktops, 1200px and up) */
+/* Extra Large devices (HD Desktops, 1200px and up) */
 @media (min-width: @xl-breakpoint) {
   .generate-columns(@cols, xl);
 	.generate-utilities(xl);

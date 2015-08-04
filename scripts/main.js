@@ -22,4 +22,7 @@ function jsDetect() {
     worker.postMessage({cmd: 'add', params: {x: 2, y: 3}});
   }
 
+  // var a = pm.alert();
+  // a.init();
+  // a.customAlert('Stuff!');
 })(window);
