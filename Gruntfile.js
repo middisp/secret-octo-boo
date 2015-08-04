@@ -23,6 +23,16 @@
         }
       }
     },
+    uglify: {
+      my_target: {
+        files: {
+          'scripts/utilities.min.js': ['scripts/utilities.js'],
+          'scripts/customAlert.min.js': ['scripts/customAlert.js'],
+          'scripts/log.min.js': ['scripts/log.js'],
+          'scripts/log-performance.min.js': ['scripts/log-performance.js']
+        }
+      }
+    },
     watch: {
       styles: {
         files: ['less/**/*.less'], // which files to watch
@@ -34,5 +44,5 @@
     }
   });
 
-  grunt.registerTask('default', ['less', 'watch']);
+  grunt.registerTask('default', ['uglify', 'less', 'watch']);
 };

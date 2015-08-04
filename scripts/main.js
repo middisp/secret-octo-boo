@@ -15,12 +15,12 @@ function jsDetect() {
   jsDetect();
   breakpoint.refreshValue();
 
-  if(!!window.Worker){
-    var worker = new Worker('/scripts/worker.js');
-    worker.addEventListener('message', function(e){console.info(e.data)});
+  //if(!!window.Worker){
+    //var worker = new Worker('/scripts/worker.js');
+    //worker.addEventListener('message', function(e){console.info(e.data)});
 
-    worker.postMessage({cmd: 'add', params: {x: 2, y: 3}});
-  }
+    //worker.postMessage({cmd: 'add', params: {x: 2, y: 3}});
+  //}
 
   // var a = pm.alert();
   // a.init();
