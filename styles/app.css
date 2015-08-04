@@ -1,10 +1,15 @@
 /* Media Queries */
-/* Fonts */
-/* Informative Colors */
 /* Grid Stuff */
+/* Fonts */
 html {
   font-size: 10px;
   box-sizing: border-box;
+}
+body {
+  color: #333333;
+  font-family: Arial, helevetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 *,
 *:before,
@@ -627,12 +632,6 @@ body:before {
   margin-right: auto;
 }
 /*#endregion */
-body {
-  color: #333333;
-  font-family: Arial, helevetica, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.4;
-}
 h1,
 .h1,
 h2,
@@ -760,8 +759,6 @@ td {
   display: block;
   padding: 5px;
 }
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
 @media (min-width: 750px) {
   thead,
   tbody,
@@ -1049,6 +1046,7 @@ td {
 .m-l-5 {
   margin-left: 2.5rem;
 }
+/* Informative Colors */
 /* User Messages */
 .user-msg {
   border: solid 1px;
