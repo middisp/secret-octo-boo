@@ -38,11 +38,19 @@
         files: ['less/**/*.less'], // which files to watch
         tasks: ['less'],
         options: {
-          nospawn: true
+          spawn: false
+        }
+      },
+      scripts: {
+        files: ['scripts/**/*.js'],
+        tasks: ['uglify'],
+        options: {
+          spawn: false
         }
       }
     }
   });
 
   grunt.registerTask('default', ['uglify', 'less', 'watch']);
+  grunt.registerTask('shrink-js', ['uglify']);
 };
