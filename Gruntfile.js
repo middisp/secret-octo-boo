@@ -24,7 +24,7 @@
       }
     },
     uglify: {
-      my_target: {
+      development: {
         files: {
           'scripts/utilities.min.js': ['scripts/utilities.js'],
           'scripts/customAlert.min.js': ['scripts/customAlert.js'],
