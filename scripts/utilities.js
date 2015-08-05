@@ -205,7 +205,7 @@
   /* AJAX */
   /*
     obj = {
-      method: 'GET',
+      method: 'POST',
       url: 'http://google.com',
       data: {},
       type: 'json',
