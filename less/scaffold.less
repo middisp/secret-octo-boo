@@ -1,21 +1,3 @@
-/* Media Queries */
-@sm-breakpoint: 550px;
-@md-breakpoint: 750px;
-@lg-breakpoint: 1000px;
-@xl-breakpoint: 1200px;
-
-/* Grid Stuff */
-@default-padding: 1rem;
-@cols: 12;
-
-/* Fonts */
-@base-font-size: 10px;
-@body-font-size: 1.4rem;
-@font-color: #333;
-@font-weight: 600;
-@font-family: Arial, helevetica, sans-serif;
-@line-height: 1.4;
-
 html {
 	font-size: @base-font-size;
   box-sizing:border-box;
@@ -34,12 +16,12 @@ body {
 
 .row {
 	width:100%;
-}
 
-.row:before, .row:after {
-	content:"";
-	clear:both;
-	display:block;
+	&:before, &:after {
+		content:"";
+		clear:both;
+		display:block;
+	}
 }
 
 [class*=col-] {float:left; padding: @default-padding;}

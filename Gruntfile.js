@@ -51,6 +51,6 @@
     }
   });
 
-  grunt.registerTask('default', ['uglify', 'less', 'watch']);
+  grunt.registerTask('default', ['less', 'watch']);
   grunt.registerTask('shrink-js', ['uglify']);
 };

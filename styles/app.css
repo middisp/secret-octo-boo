@@ -1,6 +1,7 @@
 /* Media Queries */
 /* Grid Stuff */
 /* Fonts */
+/* Informative Colors */
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -673,6 +674,10 @@ h6,
 .h6 {
   font-size: 1.5rem;
 }
+.lead {
+  font-size: 2rem;
+  font-weight: 600;
+}
 .text-right {
   text-align: right;
 }
@@ -695,10 +700,6 @@ h6,
 }
 .to-camel {
   text-transform: capitalize;
-}
-.lead {
-  font-size: 2rem;
-  font-weight: 600;
 }
 /*#region - Buttons */
 button,
@@ -1049,7 +1050,6 @@ td {
 .m-l-5 {
   margin-left: 2.5rem;
 }
-/* Informative Colors */
 /* User Messages */
 .user-msg {
   border: solid 1px;
