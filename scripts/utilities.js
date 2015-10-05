@@ -27,6 +27,21 @@
     }
     return elem;
   };
+  
+  $.getDataAttrs = function (elem) {
+    if (elem.dataset) {
+      return elem.dataset;
+    } else {
+      var attrs = elem.attributes,
+          attributes = {};
+      for (var i = 0; i < attrs.length; i++) {
+        if (attrs[i].name.indexOf('data-') > -1) {
+          attributes[attrs[i].name] = attrs[i].value;
+        }
+      }
+    }
+    return attributes;
+  };
 
   $.removeAttr = function (elem, attribute) {
     elem.removeAttribute(attribute);
