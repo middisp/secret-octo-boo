@@ -173,14 +173,14 @@
       if (elem.classList) {
         elem.classList.remove(cls[i]);
       } else {
-        elem.className = elem.className.replace(new RegExp('\\b' + cls[i] + '\\b', 'g'), '');
+        elem.className = elem.className.replace(new RegExp('\s?(?:' + cls +')\s?'), '');
       }
     }
     return elem;
   };
 
   $.hasClass = function (elem, cls) {
-    return elem.classList ? elem.classList.contains(cls) : new RegExp('\\b' + cls + '\\b').test(elem.cls);
+    return elem.classList ? elem.classList.contains(cls) : new RegExp('\s?(?:' + cls +')\s?').test(elem.className);
   };
 
   $.addClassFor = function ( elem, className, duration ) {
