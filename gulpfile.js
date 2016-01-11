@@ -8,8 +8,8 @@ var gulp = require('gulp'),
  imageMin = require('gulp-imagemin');
 
 gulp.task('styles', function() {
-	gulp.src('sass/_main.scss')
-		.pipe(sass({})).on('error', sass.logError)
+	gulp.src('sass/app.scss')
+		.pipe(sass())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifyCSS())
 		.pipe(gulp.dest('styles'));
