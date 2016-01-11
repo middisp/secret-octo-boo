@@ -1,0 +1,20 @@
+{
+  "name": "secret-octo-boo",
+  "version": "2.0.0",
+  "description": "CSS Framework",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-cache": "^0.2.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "*",
+    "gulp-uglify": "1.2.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Peter Middis"
+}
