@@ -1,0 +1,40 @@
+.btn {
+    background-color: transparent;
+    border: solid 1px $border-color;
+    display: inline-block;
+    font-size: inherit;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: inherit;
+    }
+    
+    &:hover {
+        cursor: pointer;
+    }
+    
+    &:active {
+        outline: none;
+    }
+    
+    &:visited {
+        color: inherit;
+    }
+    
+    .full {
+        width: 100%;
+    }
+    
+    .small {
+        padding: .5rem 1rem;
+        font-size: $base-font-small;
+    }
+    
+    .lrg {
+        font-size: $base-font-large;
+        padding: 1.5rem 2.5rem;
+    }
+}
