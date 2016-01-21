@@ -31,6 +31,8 @@
     /**
      * Simple create element method
      */
+    create : function(elem) {
+      return document.createElement(elem);
     },
 
     /**
