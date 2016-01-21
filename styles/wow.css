@@ -1,0 +1,116 @@
+.wow {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.wow-once {
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.wow--ease {
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+.wow--ease-in {
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.wow--ease-in-out {
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+.wow--ease-out {
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.wow--linear {
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.wow--spin,
+.wow--spin-hover:hover {
+    -webkit-animation-name: spin;
+    -moz-animation-name: spin;
+    -o-animation-name: spin;
+    animation-name: spin;
+}
+
+.wow--swing,
+.wow--swing-hover:hover {
+    -webkit-animation-name: swing;
+    -moz-animation-name: swing;
+    -o-animation-name: swing;
+    animation-name: swing;
+}
+
+.wow--zip,
+.wow--zip-hover:hover {
+    -webkit-animation-name: zip;
+    -moz-animation-name: zip;
+    -o-animation-name: zip;
+    animation-name: zip;
+}
+
+@-webkit-keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes swing {
+    50%  { transform: rotate(180deg)}
+}
+@-moz-keyframes swing {
+    50% { transform: rotate(180deg); }
+}
+@-o-keyframes swing {
+    50% { transform: rotate(180deg); }
+}
+@keyframes swing {
+    50% { transform: rotate(180deg); }
+}
+
+@-webkit-keyframes zip {
+  0%   { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}
+@-moz-keyframes zip {
+  0%   { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}
+@-o-keyframes zip {
+  0%   { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}
+@keyframes zip {
+  0%   { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}

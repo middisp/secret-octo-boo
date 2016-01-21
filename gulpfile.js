@@ -1,11 +1,11 @@
 var gulp = require('gulp'),
- sass = require('gulp-sass'),
- minifyCSS = require('gulp-minify-css'),
- rename = require('gulp-rename'),
- uglify = require('gulp-uglify'),
- concat = require('gulp-concat'),
- cache = require('gulp-cache'),
- imageMin = require('gulp-imagemin');
+    sass = require('gulp-sass'),
+    minifyCSS = require('gulp-minify-css'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    cache = require('gulp-cache'),
+    imageMin = require('gulp-imagemin');
 
 gulp.task('styles', function() {
 	gulp.src('sass/app.scss')
