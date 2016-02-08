@@ -17,59 +17,89 @@
     animation-iteration-count: 1;
 }
 
-.wow--ease {
+.wow-reverse {
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.wow-alternate {
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.wow-ease {
     -webkit-animation-timing-function: ease;
     -moz-animation-timing-function: ease;
     -o-animation-timing-function: ease;
     animation-timing-function: ease;
 }
-.wow--ease-in {
+.wow-ease-in {
     -webkit-animation-timing-function: ease-in;
     -moz-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 }
-.wow--ease-in-out {
+.wow-ease-in-out {
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-timing-function: ease-in-out;
     -o-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
 }
-.wow--ease-out {
+.wow-ease-out {
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
 }
-.wow--linear {
+.wow-linear {
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
-.wow--spin,
-.wow--spin-hover:hover {
+.wow-spin,
+.wow-spin-hover:hover {
     -webkit-animation-name: spin;
     -moz-animation-name: spin;
     -o-animation-name: spin;
     animation-name: spin;
 }
 
-.wow--swing,
-.wow--swing-hover:hover {
+.wow-swing,
+.wow-swing-hover:hover {
     -webkit-animation-name: swing;
     -moz-animation-name: swing;
     -o-animation-name: swing;
     animation-name: swing;
 }
 
-.wow--zip,
-.wow--zip-hover:hover {
+.wow-zip,
+.wow-zip-hover:hover {
     -webkit-animation-name: zip;
     -moz-animation-name: zip;
     -o-animation-name: zip;
     animation-name: zip;
+}
+
+.wow-embiggen,
+.wow-embiggen-hover:hover {
+    -webkit-animation-name: embiggen;
+    -moz-animation-name: embiggen;
+    -o-animation-name: embiggen;
+    animation-name: embiggen;
+}
+
+.wow-appear,
+.wow-appear:hover {
+    -webkit-animation-name: appear;
+    -moz-animation-name: appear;
+    -o-animation-name: appear;
+    animation-name: appear;
 }
 
 @-webkit-keyframes spin {
@@ -99,18 +129,48 @@
 }
 
 @-webkit-keyframes zip {
-  0%   { transform: translateX(-100px); }
-  100% { transform: translateX(0); }
+    0% { transform: translateX(-100px) skewX(20deg) }
+    100% { transform: translateX(0) skewX(0); }
 }
 @-moz-keyframes zip {
-  0%   { transform: translateX(-100px); }
-  100% { transform: translateX(0); }
+    0% { transform: translateX(-100px) skewX(20deg)}
+    100% { transform: translateX(0) skewX(0)}
 }
 @-o-keyframes zip {
-  0%   { transform: translateX(-100px); }
-  100% { transform: translateX(0); }
+    0% { transform: translateX(-100px) skewX(20deg)}
+    100% { transform: translateX(0) skewX(0)}
 }
 @keyframes zip {
-  0%   { transform: translateX(-100px); }
-  100% { transform: translateX(0); }
+    0% { transform: translateX(-100px) skewX(20deg)}
+    100% { transform: translateX(0) skewX(0)}
+}
+
+@-webkit-keyframes embiggen {
+    100% { transform: scale(2); }
+}
+@-moz-keyframes embiggen {
+    100% { transform: scale(2); }
+}
+@-o-keyframes embiggen {
+    100% { transform: scale(2); }
+}
+@keyframes embiggen {
+    100% { transform: scale(2); }
+}
+
+@-webkit-keyframes appear {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@-moz-keyframes appear {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@-o-keyframes appear {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@keyframes appear {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
 }
