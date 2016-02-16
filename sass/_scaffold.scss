@@ -18,7 +18,7 @@
 }
 
 [class*=col] {
-    display: block;
+    display: inline-block;
     flex: 1;
     padding: $gutter;
     width:100%;
