@@ -50,4 +50,28 @@ pre.html:after {content:"HTML"}
     border: solid 1px #bada55;
     padding:1rem;
 }
+
+.row + .row {
+    margin-top:20px;
+}
 /*#endregion*/
+
+.card {
+    background-color: #999;
+    border-color: transparent;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+.card + .card {
+    margin-left:20px;
+}
+
+.card .preview {
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom:30px;
+    padding: 30px;
+}
