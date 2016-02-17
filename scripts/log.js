@@ -78,5 +78,4 @@ var obj = {
   desc: 'test object'
 }, arr = [0, 1, 2, 3];
 con.log('test', obj, arr);
-con.log(dave);
 */
