@@ -16,6 +16,10 @@
     &-stretch {align-items: stretch;}
     &-baseline {align-items: baseline;}
     &-spaced {justify-content: space-between;}
+
+    & + .row {
+        margin-top:1rem;
+    }
 }
 
 [class*=col] {
@@ -24,11 +28,15 @@
     padding: $gutter;
     width:100%;
     max-width: 100%;
-}
 
-[class*=col] > [class*=col] {
-    padding-left: 0;
-    padding-right: 0;
+    & > [class*=col] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    & + [class*=col] {
+        margin-top:$gutter;
+    }
 }
 
 .col-top {align-self: flex-start;}
@@ -79,5 +87,9 @@
 @media (min-width: 40rem) {
     .row {
         flex-direction: row;
+    }
+
+    [class*=col] + [class*=col] {
+        margin-top:0;
     }
 }
