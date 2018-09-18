@@ -26,12 +26,12 @@ Typography
     --body-line-height: 1.4;
 }
 
-// @include breakpoint(md) {
-//     :root {
-//         --text-base-size: 1.25em;
-//         --text-scale-ratio: 1.25;
-//     }
-// }
+@media (min-width: 40rem) {
+    :root {
+        --text-base-size: 1.25em;
+        --text-scale-ratio: 1.25;
+    }
+}
 
 body {
     font-size: var(--text-base-size);
