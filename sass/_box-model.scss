@@ -22,7 +22,7 @@ Spacing
 }
 
 // optional - edit space unit and padding of all components at a specific breakpoint
-@media (min-width: 40rem) {
+@include breakpoint(md) {
     :root {
         --space-unit: 1.25em;
         --component-padding: var(--space-md);
@@ -70,7 +70,7 @@ Spacing
     margin-bottom: var(--space-xxl);
 }
 
-@media (min-width: 40rem) {
+@include breakpoint(md) {
     .margin-top, .margin-top--md {
         margin-top: var(--space-lg);
     }
