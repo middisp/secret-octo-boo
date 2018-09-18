@@ -26,12 +26,12 @@ Typography
     --body-line-height: 1.4;
 }
 
-@include breakpoint(md) {
-    :root {
-        --text-base-size: 1.25em;
-        --text-scale-ratio: 1.25;
-    }
-}
+// @include breakpoint(md) {
+//     :root {
+//         --text-base-size: 1.25em;
+//         --text-scale-ratio: 1.25;
+//     }
+// }
 
 body {
     font-size: var(--text-base-size);
@@ -40,7 +40,7 @@ body {
 }
 
 h1, h2, h3, h4, form legend {
-    color: var(--color-text-heading);
+    color: $base-font-color;
     margin-bottom: var(--space-xxs);
     line-height: var(--heading-line-height);
 }

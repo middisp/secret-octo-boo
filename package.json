@@ -4,14 +4,14 @@
   "description": "CSS Framework",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-cache": "^0.2.10",
-    "gulp-concat": "^2.6.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-minify-css": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-clean-css": "*",
     "gulp-rename": "*",
-    "gulp-uglify": "1.2.0"
+    "gulp-sass": "*",
+    "gulp-uglify": "*"
   },
   "scripts": {
     "test": "test"

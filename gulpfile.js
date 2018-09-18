@@ -1,9 +1,8 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     sass = require('gulp-sass'),
-    minifyCSS = require('gulp-minify-css'),
+    minifyCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
     cache = require('gulp-cache'),
     imageMin = require('gulp-imagemin');
 

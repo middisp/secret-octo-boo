@@ -30,11 +30,11 @@
     
     .small {
         padding: .5rem 1rem;
-        font-size: $base-font-small;
+        font-size: var(--text-sm);
     }
     
     .lrg {
-        font-size: $base-font-large;
+        font-size: var(--text-lg);
         padding: 1.5rem 2.5rem;
     }
 }
