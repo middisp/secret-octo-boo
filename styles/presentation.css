@@ -1,12 +1,5 @@
 /*#region - Typography */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {margin:0 0 1rem;}
 h2 {color:#999}
-
-/* Sizes */
-h1 {font-size:4rem}
-h2 {font-size:3.2rem}
-p {font-size:1.4rem}
-
 p {color:inherit}
 
 h1, h2 {font-family:'Strait', sans-serif}
